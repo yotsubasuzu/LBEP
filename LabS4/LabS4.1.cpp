@@ -5,7 +5,7 @@ int main(){
 	scanf("%d",&n);
 
 	for(int i=1;i<=n;i++){
-		x = x * i;
+		x *= i;
 	}
 	
 //	int i=1;
@@ -14,6 +14,5 @@ int main(){
 //		i++;
 //	}while(i<=n);
 
-	printf("n! = %d",x);
 	printf("%d! = %d",n,x);
 }
