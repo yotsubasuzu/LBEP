@@ -15,4 +15,5 @@ int main(){
 //	}while(i<=n);
 
 	printf("n! = %d",x);
+	printf("%d! = %d",n,x);
 }
