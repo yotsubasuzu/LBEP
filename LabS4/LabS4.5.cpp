@@ -8,16 +8,17 @@ int main(){
 	if(n < 2){
 		printf("n ko phai so nguyen to");
 	}else{
-		int s = 0;
+		int k=0;
 		for(int i = 2; i <= sqrt(n); i++){
 			if(n % i == 0){
-				s++;
+				k++;
+				break; //thoat vong lap
 			}
 		}
-		if (s == 0){
-			printf("n la so nguyen to");
+		if (k == 0){
+			printf("%d la so nguyen to",n);
 		}else{
-			printf("n ko phai 0la so nguyen to");
+			printf("%d ko phai so nguyen to",n);
 		}
 	}
 }
