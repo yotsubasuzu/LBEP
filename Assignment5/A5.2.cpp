@@ -11,10 +11,16 @@ int main(){
 			scanf("%d",&a[i][j]);
 		}
 	}
-	int s=0;
+	int s1=0;
 	for(int i=0;i<n;i++){
-		s=(s+a[i][i]);
+		s1=(s1+a[i][i]);
 	}
+	
+	int s2=0;
+	for(int i=0;i<n;i++){
+		s2+=a[i][n-1-i];
+	}
+	
 	
 	printf("Ma tran: \n");
 	for(int i=0;i<n;i++){
@@ -24,7 +30,9 @@ int main(){
 		printf("\n");
 	}
 	
-	float tbc=s/(float)n;
-	printf("Trung binh cong duong cheo la: %f",tbc);
+	float tbc1=s1/(float)n;
+	float tbc2=s2/(float)n;
+	printf("Trung binh cong duong cheo 1 la: %f\n",tbc1);
+	printf("Trung binh cong duong cheo 2 la: %f",tbc2);	
 }
 	

@@ -12,7 +12,6 @@ int main(){
 		for(int j=0;j<n;j++){
 			printf("Nhap so a[%d][%d]: ",i,j);
 			scanf("%d",&a[i][j]);
-			s1+=a[i][j];
 		}
 	}
 	int s2=0;
@@ -20,10 +19,21 @@ int main(){
 		for(int j=0;j<n;j++){
 			printf("Nhap so b[%d][%d]: ",i,j);
 			scanf("%d",&b[i][j]);
-			s2+=b[i][j];
 		}
 	}
 	
-	int s=s1+s2;
-	printf("Tong hai ma tran la: %d",s);
+	int c[m][n];
+	for(int i=0;i<m;i++){
+		for(int j=0;j<n;j++){
+			c[i][j]=a[i][j]+b[i][j];
+		}
+	}
+	
+	printf("Tong 2 mang la: \n");
+	for(int i=0;i<m;i++){
+		for(int j=0;j<n;j++){
+			printf("%5d",c[i][j]);
+		}
+		printf("\n");
+	}
 }

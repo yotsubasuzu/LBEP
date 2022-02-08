@@ -6,7 +6,7 @@ int main(){
 	scanf("%d",&n);	
 	
 	if(n < 2){
-		printf("n ko phai so nguyen to");
+		printf("%d ko phai so nguyen to",n);
 	}else{
 		int k=0;
 		for(int i = 2; i <= sqrt(n); i++){

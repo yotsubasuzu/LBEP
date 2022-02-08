@@ -9,15 +9,15 @@ int main(){
 		printf("Nhap phan tu arr[%d]: ",i);
 		scanf("%d",&arr[i]);
 	}
-	int dem=1,max=1;
+	int dem=0,max=0;
 	for(int i=0;i<n;i++){
-		if(arr[i]>0&&arr[i+1]==arr[i]+1){
+		if(arr[i]>0){
 			dem++;
 			if(dem>max){
-				max=dem;	
+				max=dem;
 			}
-		}else if(arr[i]>0&&arr[i+1]!=arr[i]+1){
-			dem=1;
+		}else{
+			dem=0;
 		}
 	}
 	printf("Chuoi so duong lon nhat trong mang la: %d",max);

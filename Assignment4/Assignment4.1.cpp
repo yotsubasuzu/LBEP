@@ -9,10 +9,16 @@ int main(){
 		printf("Nhap phan tu arr[%d]: ",i);
 		scanf("%d",&arr[i]);
 	}
+	int x=0;
 	for(int i=(n-1);i>=0;i--){
 		if(arr[i]%2!=0){
-			printf("So le: %d",arr[i]);
+			x=arr[i];
 			break;
 		}
+	}
+	if(x==0){
+		printf("Mang ko co so le");
+	}else{
+		printf("So le cuoi cung: %d",x);
 	}
 }
